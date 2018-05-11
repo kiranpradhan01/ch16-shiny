@@ -32,13 +32,13 @@ ui <- fluidPage(
 
   # An image with this `src`
   # https://media2.giphy.com/media/l3q2Ip7FrmPE33EiI/giphy.gif
-  img("are you excited?", src= 'https://media2.giphy.com/media/l3q2Ip7FrmPE33EiI/giphy.gif'),
+  img("Are you excited?", src= 'https://media2.giphy.com/media/l3q2Ip7FrmPE33EiI/giphy.gif'),
   
   # Another paragraph about a slider: include some `em` text
   p("You can use this", em("super cool"), "slider to show how", em("excited"), "you are."),
   
   # A slider with an appropriate label, min of 10, max of 100, value of 50  
-  sliderInput("excitement bar", "excitement bar", min = 10, max = 100, value = 50))
+  sliderInput("excitement bar", "Excitement Bar", min = 10, max = 100, value = 50))
 
 
 # Define a `server` function that accepts an input and an output
@@ -49,3 +49,4 @@ server <- function(input, output) {}
 
 # Create a new `shinyApp()` using the above ui and server
 shinyApp(ui = ui, server = server)
+
